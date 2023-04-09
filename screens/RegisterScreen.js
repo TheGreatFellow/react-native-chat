@@ -39,7 +39,7 @@ const RegisterScreen = ({ navigation }) => {
         <KeyboardAvoidingView
             behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
             style={styles.container}
-            keyboardVerticalOffset={-250}
+            keyboardVerticalOffset={-300}
         >
             <TextInput
                 style={styles.input}
@@ -70,7 +70,6 @@ const RegisterScreen = ({ navigation }) => {
                 value={imageUrl}
                 placeholder='Profile Picture URL (optional)'
             />
-            <View style={{ height: 20 }} />
             <TouchableOpacity style={styles.button} onPress={register}>
                 <Text
                     style={{ fontWeight: 'bold', color: '#fff', fontSize: 18 }}
@@ -131,7 +130,7 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 40,
+        marginTop: 20,
         width: 300,
     },
 })

@@ -3,12 +3,12 @@ import { getFirestore } from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: 'AIzaSyBKKYaWpoavb-uJNP0XGa3Vpzy6Lmh5X3w',
+    apiKey: ENV.apiKey,
     authDomain: 'schmooze1.firebaseapp.com',
     projectId: 'schmooze1',
     storageBucket: 'schmooze1.appspot.com',
     messagingSenderId: '252108027894',
-    appId: '1:252108027894:web:497b224054620984e7b9d7',
+    appId: 'ENV.appID',
 }
 
 let app
